@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  padding:0px;
+  margin: 0px;
+  background-color:white;
+  overflow-x: hidden;
+   
+}
+
