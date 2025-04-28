@@ -1,0 +1,245 @@
+/* Parts container styling */
+.parts-container {
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Part text styling */
+.part-text {
+    text-align: left;
+    width: 100%;
+}
+
+.part-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.part-price {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.parts-info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parts-info-text {
+    width: 71%;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.parts-store-links {
+    width: 29%;
+    display: flex;
+    gap: 20px;
+}
+
+/* Heading styling */
+.parts-heading {
+    color: red;
+    font-size: 32px;
+    margin-bottom: 20px;
+    padding-left: 70px;
+}
+
+
+.parts-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 220px);
+    grid-gap: 20px;
+    justify-content: center; 
+}
+
+/* Parts Store Icon */
+.parts-store-icon {
+    width: 120px;
+    height: auto;
+}
+
+/* Part item styling */
+.part-item {
+    position: relative;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    width: 220px; 
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+
+.part-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 5px; 
+    left: 5px; 
+}
+
+/* Heart icon styling */
+.heart-icon {
+    font-size: 18px;
+    color: green;
+}
+
+/* Green fill when the heart is filled */
+.heart-icon.filled {
+    color: green;
+}
+
+
+.heart-icon.outlined {
+    color: white;
+    stroke: green;
+    stroke-width: 50px;
+}
+
+/* New tag */
+.parts-new-tag {
+    background-color: red;
+    color: white;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    width: 50%; 
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+/* Image styling */
+.part-image {
+    width: 100px; 
+    height: 100px; 
+    margin: 0 auto; 
+    object-fit: cover; 
+}
+
+/* Star ratings */
+.part-rating {
+    display: flex;
+    justify-content: flex-start; 
+    margin: 10px 0;
+    width: 100%; 
+}
+
+.star {
+    font-size: 16px;
+    margin-right: 5px;
+    color: gold;
+}
+
+.star.filled {
+    color: gold;
+}
+
+/* Responsive styling */
+@media (min-width: 1200px) {
+    .parts-info-section {
+        margin-left: 50px;
+        margin-right: 0px;
+    }
+
+    .parts-heading {
+        margin-left: 0;
+    }
+} 
+
+@media (max-width: 1115px) { 
+    .parts-grid {
+        grid-template-columns: repeat(3, 220px);
+    }
+}
+
+
+@media (min-width: 900px) {
+    .parts-info-section {
+        margin-left: 90px;
+        margin-right: 190px;
+    }
+
+    .parts-heading {
+        margin-left: 120px;
+    }
+}
+
+@media (min-width: 990px) {
+    .parts-info-section {
+        margin-left: 170px;
+        margin-right: 270px;
+    }
+}
+
+@media (max-width: 990px) {
+    .parts-heading {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .parts-heading {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 770px) { 
+    .parts-grid {
+        grid-template-columns: repeat(2, 220px);
+    }
+}
+
+@media (min-width: 768px) {
+    .parts-info-section {
+        margin-left: 50px;
+        margin-right: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .parts-grid {
+        grid-template-columns: 1fr;
+        justify-items: center; 
+    }
+}
+
+@media (max-width: 768px) {
+    .parts-info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parts-info-text, .parts-store-links {
+        width: 100%;
+    }
+
+    .parts-store-links {
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .parts-store-links {
+        flex-direction: column;
+    }
+}

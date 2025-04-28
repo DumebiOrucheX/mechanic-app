@@ -1,0 +1,146 @@
+/* Home Body content styling */
+.body-content {
+    padding: 0px;
+    margin-top: 70px;
+}
+
+/* Heading styling */
+.services-section h2 {
+    color: red;
+    font-size: 36px;
+    text-align: left;
+    margin-left: 27%;
+    margin-bottom: 20px;
+}
+
+/* Image grid styling for services */
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns on large screens */
+    gap: 0px; /* Minimal space between images */
+    max-width: 1200px; /* Limit width for larger side spacing */
+    margin-left: 25%; /* Increase left and right margins for centering */
+    margin-right: 25%;
+}
+
+/* Service item styling */
+.service {
+    text-align: center;
+}
+
+/* Service image styling */
+.service img {
+    width: 90%; /* Use full width of the service div */
+    height: auto;
+    border-radius: 50%; /* Rounded images */
+}
+
+/* Service description styling */
+.service p {
+    margin-top: 5px; /* Reduced margin */
+    font-size: 14px;
+    word-wrap: break-word; /* Prevents overflow of long text */
+}
+
+/* Two-column layout for text and store links */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.info-text {
+    width: 70%; /* Text column takes 70% width */
+    font-size: 16px;
+    padding: 20px;
+}
+
+.store-links {
+    width: 30%; /* Store links take 30% width */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.store-icon {
+    width: 120px;
+    height: auto;
+}
+
+/* Responsive styling */
+@media (max-width: 1070px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-text, .store-links {
+        width: 100%;
+    }
+
+    .store-links {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .image-row {
+    margin-left: 20%; /* Increase left and right margins for centering */
+    margin-right: 20%;
+    }
+
+    .service img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-row {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 25%; /* Smaller side margins for small screens */
+        margin-right: 25%;
+        gap: 2px; /* Tighter spacing between images on smaller screens */
+    }
+
+    .service img {
+        width: 70%;
+    }
+
+    .body-content {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 567px) {
+    .body-content {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-section h2 {
+        margin-left: 10px;
+    }
+
+    .image-row {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 25%; /* Smaller side margins for small screens */
+        margin-right: 25%;
+        gap: 2px; /* Tighter spacing between images on smaller screens */
+    }
+
+}
+
+@media (max-width: 600px) {
+    .info-section {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
